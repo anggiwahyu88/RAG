@@ -15,90 +15,34 @@ Mahasiswa mengisi, memodifikasi, dan mengembangkan kode ini sesuai topik kelompo
 | Azza Auliyaul Fitri  | 244311006 | ...         |
 | Prima Afda Mukhlisin  | 244311004 | ...         |
 
-**Topik Domain:** * Hukum *  
-**Stack yang Dipilih:** *(isi: LangChain / LlamaIndex / From Scratch)*  
-**LLM yang Digunakan:** * Groq *  
-**Vector DB yang Digunakan:** * ChromaDB *
+**Topik Domain:** Hukum 
+**Stack yang Dipilih:** LangChain
+**LLM yang Digunakan:** Gemini  
+**Vector DB yang Digunakan:** ChromaDB
 
 ---
 
 ## 🗂️ Struktur Proyek
 
 ```
-rag-uts-[nama-kelompok]/
-├── data/                    # Dokumen sumber Anda (PDF, TXT, dll.)
-│   └── sample.txt           # Contoh dokumen (ganti dengan dokumen Anda)
+rag-uts-[RAG-uu-ite]/
+├── data/                    
+│   └── uu-ite.pdf           
 ├── src/
-│   ├── indexing.py          # 🔧 WAJIB DIISI: Pipeline indexing
-│   ├── query.py             # 🔧 WAJIB DIISI: Pipeline query & retrieval
-│   ├── embeddings.py        # 🔧 WAJIB DIISI: Konfigurasi embedding
-│   └── utils.py             # Helper functions
+│   ├── indexing.py         
+│   └── query.py             
 ├── ui/
-│   └── app.py               # 🔧 WAJIB DIISI: Antarmuka Streamlit
+│   └── app.py               
 ├── docs/
-│   └── arsitektur.png       # 📌 Diagram arsitektur (buat sendiri)
+│   └── arsitektur.png       
 ├── evaluation/
-│   └── hasil_evaluasi.xlsx  # 📌 Tabel evaluasi 10 pertanyaan
+│   └── hasil_evaluasi.xlsx  
 ├── notebooks/
-│   └── 01_demo_rag.ipynb    # Notebook demo dari hands-on session
-├── .env.example             # Template environment variables
+│   └── 01_demo_rag.ipynb    
+├── .env.example             
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-```
-
----
-
-## ⚡ Cara Memulai (Quickstart)
-
-### 1. Clone & Setup
-
-```bash
-# Clone repository ini
-git clone https://github.com/[username]/rag-uts-[kelompok].git
-cd rag-uts-[kelompok]
-
-# Buat virtual environment
-python -m venv venv
-source venv/bin/activate        # Linux/Mac
-# atau: venv\Scripts\activate   # Windows
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### 2. Konfigurasi API Key
-
-```bash
-# Salin template env
-cp .env.example .env
-
-# Edit .env dan isi API key Anda
-# JANGAN commit file .env ke GitHub!
-```
-
-### 3. Siapkan Dokumen
-
-Letakkan dokumen sumber Anda di folder `data/`:
-```bash
-# Contoh: salin PDF atau TXT ke folder data
-cp dokumen-saya.pdf data/
-```
-
-### 4. Jalankan Indexing (sekali saja)
-
-```bash
-python src/indexing.py
-```
-
-### 5. Jalankan Sistem RAG
-
-```bash
-# Dengan Streamlit UI
-streamlit run ui/app.py
-
-# Atau via CLI
-python src/query.py
 ```
 
 ---
@@ -109,10 +53,10 @@ Semua konfigurasi utama ada di `src/config.py` (atau langsung di setiap file):
 
 | Parameter | Default | Keterangan |
 |-----------|---------|------------|
-| `CHUNK_SIZE` | 500 | Ukuran setiap chunk teks (karakter) |
-| `CHUNK_OVERLAP` | 50 | Overlap antar chunk |
-| `TOP_K` | 3 | Jumlah dokumen relevan yang diambil |
-| `MODEL_NAME` | *(isi)* | Nama model LLM yang digunakan |
+| `CHUNK_SIZE` | 1000 | Ukuran setiap chunk teks (karakter) |
+| `CHUNK_OVERLAP` | 200 | Overlap antar chunk |
+| `TOP_K` | 1 | Jumlah dokumen relevan yang diambil |
+| `MODEL_NAME` | Gemini | Nama model LLM yang digunakan |
 
 ---
 
@@ -144,9 +88,9 @@ Semua konfigurasi utama ada di `src/config.py` (atau langsung di setiap file):
 
 ## 📚 Referensi & Sumber
 
-- Framework: *(LangChain docs / LlamaIndex docs)*
-- LLM: *(Groq / Gemini / Ollama)*
-- Vector DB: *(ChromaDB / FAISS docs)*
+- Framework: LangChain docs 
+- LLM: Gemini
+- Vector DB: ChromaDB
 - Tutorial yang digunakan: *(cantumkan URL)*
 
 ---
@@ -155,4 +99,4 @@ Semua konfigurasi utama ada di `src/config.py` (atau langsung di setiap file):
 
 - **Mata Kuliah:** Data Engineering
 - **Program Studi:** D4 Teknologi Rekayasa Perangkat Lunak
-- **Deadline:** *(isi tanggal)*
+- **Deadline:** 23 April 2026
