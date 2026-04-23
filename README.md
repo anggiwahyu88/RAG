@@ -30,6 +30,8 @@ Proyek ini adalah implementasi sistem RAG untuk pemenuhan tugas UTS Data Enginee
 
 ```
 rag-uts-kelompok3/
+├── chroma_db/
+│   └── chroma.sqlite3       # Vector Db
 ├── data/                    # Dokumen sumber (PDF, Docx)
 │   ├── Persoalan-UU-ITE-dan-Pelanggan-Hak-Digital.docx
 │   ├── UU Nomor 19 Tahun 2016.pdf          
@@ -141,9 +143,8 @@ Semua konfigurasi utama ada di `src/config.py` (atau langsung di setiap file):
 *(Masukkan gambar diagram arsitektur di sini)*
 
 ```
-[Dokumen] → [Loader] → [Splitter] → [Embedding] → [Vector DB]
-                                                         ↕
-[User Query] → [Query Embed] → [Retriever] → [Prompt] → [LLM] → [Jawaban]
+<img width="714" height="301" alt="arsitektur" src="https://github.com/user-attachments/assets/a55813b7-6b84-4cbd-ba94-5381d26c0cb4" />
+
 ```
 
 ---
