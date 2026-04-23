@@ -42,6 +42,7 @@ rag-uts-UUITE/
 ├── docs/
 │   └── arsitektur.png       # 📌 Diagram arsitektur
 ├── evaluation/
+│   ├── hasil_evaluasi.pdf   # 📌 Tabel evaluasi 10 pertanyaan
 │   └── hasil_evaluasi.xlsx  # 📌 Tabel evaluasi 10 pertanyaan
 ├── .env.example             # Template environment variables
 ├── .gitignore
@@ -115,6 +116,16 @@ Semua konfigurasi utama ada di `src/config.py` (atau langsung di setiap file):
 | `MODEL_NAME` | Gemini | Nama model LLM yang digunakan |
 
 ---
+
+## 📊 Hasil Evaluasi
+
+*(click link for the Evaluation result)*
+
+https://github.com/anggiwahyu88/rag-uts-UUITE/blob/main/evaluation/hasil_evaluasi.pdf
+
+**Rata-rata Skor:** 4,9  
+**Analisis:** Ketergantungan terhadap kwalitas dokumen, Belum ada evaluasi otomatis 
+
 
 ---
 
