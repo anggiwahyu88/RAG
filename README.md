@@ -42,6 +42,7 @@ rag-uts-UUITE/
 ├── docs/
 │   └── arsitektur.png       # 📌 Diagram arsitektur
 ├── evaluation/
+│   ├── hasil_evaluasi.pdf   # 📌 Tabel evaluasi 10 pertanyaan
 │   └── hasil_evaluasi.xlsx  # 📌 Tabel evaluasi 10 pertanyaan
 ├── .env.example             # Template environment variables
 ├── .gitignore
